@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Usando jquery</title>
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//código js
+				//alert('Olaaá');
+				$("#texto").html("Troca aí");
+				$("#trocaTexto").val("valor novo");
+
+				$(".mudar").html("trocando via class");
+
+
+				$("#clicar").click(function(){
+					alert("oi");
+				});
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1 id="texto">Exemplo JQUERY</h1><br/>
+		<input type="text" id="trocaTexto" />
+		<button id="clicar">Troca</button>
+		<ul>
+			<li class="mudar">Texto 1</li>
+			<li class="mudar">Texto 2</li>
+			<li class="mudar">Texto 3</li>
+		</ul>
+
+	</body>
+</html>

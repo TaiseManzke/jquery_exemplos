@@ -1,0 +1,21 @@
+<html>
+ <head>
+ 	<title></title>
+ 	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+ 	<script type="text/javascript">
+			$(document).ready(function(){
+				$("#troca").click(function(){
+					var resinput = $("#texto").val();
+					$("#paragrafo").html(resinput);
+				});
+
+			});
+		</script>
+ 
+ </head>
+ <body>
+	 <input type="text" id="texto"/>
+	 <p id="paragrafo">TEXTO QUE VAI SER TROCADO</p>
+	 <input type="button" value="troca" id="troca"/>
+ </body>
+</html>
